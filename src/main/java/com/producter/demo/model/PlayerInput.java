@@ -1,6 +1,6 @@
-package com.producter.demo.entity.model;
+package com.producter.demo.model;
 
-public class PlayerModel {
+public class PlayerInput {
     private String name;
     private String surname;
     private String position;
@@ -27,5 +27,14 @@ public class PlayerModel {
 
     public void setPosition(String position) {
         this.position = position;
+    }
+
+    @Override
+    public String toString() {
+        return "PlayerInput{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", position='" + position + '\'' +
+                '}';
     }
 }
